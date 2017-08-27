@@ -1,14 +1,14 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(ParticleSystem))]
+[RequireComponent(typeof(Rigidbody))]
 public class RigidbodyFollowParticles : MonoBehaviour
 {
     ParticleSystem m_particlesSystem;
     ParticleSystem.Particle[] m_particles;
     Rigidbody m_rigidbody;
-    public static int numOfWindAffectedObjects = 0;
-    [SerializeField]
-    public int NUM;
+    public static int numOfParticleRigidbodies = 0;
+    private bool alreadyActive = false;
 
     public bool affectedByWind = true;
     void Start()
@@ -18,6 +18,8 @@ public class RigidbodyFollowParticles : MonoBehaviour
         m_rigidbody = gameObject.GetComponent<Rigidbody>();
 
         //Setup Particle System
+        ParticleSystemRenderer psRend = m_particlesSystem.GetComponent<ParticleSystemRenderer>();
+        psRend.enabled = false;
         ParticleSystem.MainModule psMain = m_particlesSystem.main;
         psMain.startLifetimeMultiplier = Mathf.Infinity;
         psMain.startSpeed = 0; // only wind affects velocity
@@ -25,13 +27,11 @@ public class RigidbodyFollowParticles : MonoBehaviour
         psMain.maxParticles = 1;
         //can't set the following with code manual change is necessary
         //1 - Enable "External Forces"
-        //2 - Disable "Renderer"
         //3 - (pretty much worthless) Set Emmision Rate Over Time to 1
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        NUM = numOfWindAffectedObjects;
         if (affectedByWind)
         {
             m_particlesSystem.GetParticles(m_particles); //Update particle array so new particles can be detected
@@ -50,7 +50,7 @@ public class RigidbodyFollowParticles : MonoBehaviour
         m_particlesSystem.Emit(1); //emit 1 particle
         m_particlesSystem.GetParticles(m_particles); //write displayed particles to particles array
         m_particlesSystem.SetParticles(m_particles, 1); //Assign particle array to particle system
-        numOfWindAffectedObjects++;
+        numOfParticleRigidbodies++;
 
     }
 
@@ -58,6 +58,6 @@ public class RigidbodyFollowParticles : MonoBehaviour
     {
         affectedByWind = false;
         m_particlesSystem.SetParticles(m_particles, 0);
-        numOfWindAffectedObjects--;
+        numOfParticleRigidbodies--;
     }
 }
