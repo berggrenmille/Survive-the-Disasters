@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.W))
         {
-            GameObject[] cubes = GameObject.FindGameObjectsWithTag("Player");
+            GameObject[] cubes = GameObject.FindGameObjectsWithTag("Physics Object");
             foreach (GameObject g in cubes)
             {
                 g.SendMessage("StartWindSimulation", SendMessageOptions.DontRequireReceiver);
@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
-            GameObject[] cubes = GameObject.FindGameObjectsWithTag("Player");
+            GameObject[] cubes = GameObject.FindGameObjectsWithTag("Physics Object");
             foreach (GameObject g in cubes)
             {
                 g.SendMessage("StopParticleSystem", SendMessageOptions.DontRequireReceiver);

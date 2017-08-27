@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 114374654341970880}
   m_Layer: 0
   m_Name: PhysicsCube
-  m_TagString: Player
+  m_TagString: Physics Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,7 +123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8ed43ac38ad93459f24ecaf573cc8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NUM: 0
   affectedByWind: 0
 --- !u!198 &198988252360186018
 ParticleSystem:
@@ -184,7 +183,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1389688594
+  randomSeed: 1753264116
   InitialModule:
     serializedVersion: 3
     enabled: 1
