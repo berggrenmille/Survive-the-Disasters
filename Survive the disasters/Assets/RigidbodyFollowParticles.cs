@@ -8,7 +8,6 @@ public class RigidbodyFollowParticles : MonoBehaviour
     ParticleSystem.Particle[] m_particles;
     Rigidbody m_rigidbody;
     public static int numOfParticleRigidbodies = 0;
-    private bool alreadyActive = false;
 
     public bool affectedByWind = true;
     void Start()
