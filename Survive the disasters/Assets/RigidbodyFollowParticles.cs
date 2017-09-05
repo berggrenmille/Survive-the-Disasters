@@ -2,7 +2,7 @@
 
 [RequireComponent(typeof(ParticleSystem))]
 [RequireComponent(typeof(Rigidbody))]
-public class RigidbodyFollowParticles    : MonoBehaviour
+public class RigidbodyFollowParticles : MonoBehaviour
 {
     ParticleSystem m_particlesSystem;
     ParticleSystem.Particle[] m_particles;
@@ -35,7 +35,7 @@ public class RigidbodyFollowParticles    : MonoBehaviour
         {
             m_particlesSystem.GetParticles(m_particles); //Update particle array so new particles can be detected
             m_rigidbody.AddForce(50 * m_particles[0].velocity);
-            //m_rigidbody.velocity += m_particles[0].velocity;
+          //m_rigidbody.velocity += m_particles[0].velocity;
             m_particles[0].position = m_rigidbody.position;
             m_particles[0].velocity = Vector3.zero;
             m_particlesSystem.SetParticles(m_particles, 1);  ////Assign particle array to particle system to prevent bugs
@@ -53,7 +53,7 @@ public class RigidbodyFollowParticles    : MonoBehaviour
 
     }
 
-    public void StopWindSimulation()
+    public void StopParticleSystem()
     {
         affectedByWind = false;
         m_particlesSystem.SetParticles(m_particles, 0);

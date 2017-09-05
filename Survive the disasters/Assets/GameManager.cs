@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour {
             GameObject[] cubes = GameObject.FindGameObjectsWithTag("Physics Object");
             foreach (GameObject g in cubes)
             {
-                g.SendMessage("StopWindSimulation", SendMessageOptions.DontRequireReceiver);
+                g.SendMessage("StopParticleSystem", SendMessageOptions.DontRequireReceiver);
             }
             
         }
