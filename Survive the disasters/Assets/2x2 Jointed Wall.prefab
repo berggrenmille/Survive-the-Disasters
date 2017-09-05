@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 4585089940138632}
   - component: {fileID: 114106182775555950}
   m_Layer: 0
-  m_Name: 4x4 Jointed Wall
+  m_Name: 2x2 Jointed Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
