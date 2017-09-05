@@ -2686,6 +2686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD:Survive the disasters/Assets/Wall.prefab
+<<<<<<< HEAD:Survive the disasters/Assets/Wall.prefab
 <<<<<<< HEAD
 <<<<<<< HEAD:Survive the disasters/Assets/Wall.prefab
   breakForce: 50
@@ -2701,6 +2702,10 @@ MonoBehaviour:
   breakForce: 50
   breakTourque: 50
 >>>>>>> parent of 403b647... Added flying hous
+=======
+  breakForce: 50
+  breakTourque: 50
+>>>>>>> parent of b04a589... j:Survive the disasters/Assets/Wall.prefab
 =======
   breakForce: 50
   breakTourque: 50
