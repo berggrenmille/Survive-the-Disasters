@@ -139,7 +139,7 @@ Transform:
   - {fileID: 1812397106}
   - {fileID: 328000425}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -4.78, y: 16.692001, z: 64.597}
 --- !u!1001 &306142736
 Prefab:
@@ -178,7 +178,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4630724633943612, guid: 5197c06728564424994c1eed971d0fb4, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5197c06728564424994c1eed971d0fb4, type: 2}
@@ -319,7 +319,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &927076665
 Prefab:
@@ -358,7 +358,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4585089940138632, guid: 3e962066ab8747142bdc87ba3b63703a, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114106182775555950, guid: 3e962066ab8747142bdc87ba3b63703a,
+        type: 2}
+      propertyPath: useRandomBreakOffset
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e962066ab8747142bdc87ba3b63703a, type: 2}
@@ -703,7 +708,7 @@ Transform:
   m_LocalScale: {x: 50, y: 1, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -95.33301, z: 0}
 --- !u!114 &1233684149
 MonoBehaviour:
@@ -798,7 +803,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1258610458
 GameObject:
@@ -1223,11 +1228,36 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4054643623250434, guid: a75f2669dff84914b9fa9aeb61832057, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1755340059622442, guid: a75f2669dff84914b9fa9aeb61832057, type: 2}
       propertyPath: m_Name
       value: Jointed Wall Large (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114232432632362976, guid: a75f2669dff84914b9fa9aeb61832057,
+        type: 2}
+      propertyPath: useRandomBreakOffset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114232432632362976, guid: a75f2669dff84914b9fa9aeb61832057,
+        type: 2}
+      propertyPath: breakForce
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 114232432632362976, guid: a75f2669dff84914b9fa9aeb61832057,
+        type: 2}
+      propertyPath: breakTourque
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 114232432632362976, guid: a75f2669dff84914b9fa9aeb61832057,
+        type: 2}
+      propertyPath: breakForceOffset
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114232432632362976, guid: a75f2669dff84914b9fa9aeb61832057,
+        type: 2}
+      propertyPath: breakTourqueOffset
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a75f2669dff84914b9fa9aeb61832057, type: 2}
@@ -1312,7 +1342,7 @@ Transform:
   m_LocalScale: {x: 50, y: 1, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1812397105
 GameObject:
