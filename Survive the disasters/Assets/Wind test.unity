@@ -139,7 +139,11 @@ Transform:
   - {fileID: 1812397106}
   - {fileID: 328000425}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 8
+=======
+  m_RootOrder: 9
+>>>>>>> parent of 509f944... Merge branch 'master' of https://github.com/iceklue/Survive-the-Disasters
   m_LocalEulerAnglesHint: {x: -4.78, y: 16.692001, z: 64.597}
 --- !u!1001 &306142736
 Prefab:
@@ -319,7 +323,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 6
+=======
+  m_RootOrder: 7
+>>>>>>> parent of 509f944... Merge branch 'master' of https://github.com/iceklue/Survive-the-Disasters
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &927076665
 Prefab:
@@ -703,7 +711,11 @@ Transform:
   m_LocalScale: {x: 50, y: 1, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 5
+=======
+  m_RootOrder: 6
+>>>>>>> parent of 509f944... Merge branch 'master' of https://github.com/iceklue/Survive-the-Disasters
   m_LocalEulerAnglesHint: {x: 0, y: -95.33301, z: 0}
 --- !u!114 &1233684149
 MonoBehaviour:
@@ -798,7 +810,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 3
+=======
+  m_RootOrder: 4
+>>>>>>> parent of 509f944... Merge branch 'master' of https://github.com/iceklue/Survive-the-Disasters
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1258610458
 GameObject:
