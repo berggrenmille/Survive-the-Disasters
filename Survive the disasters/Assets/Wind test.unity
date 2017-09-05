@@ -144,6 +144,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 8
 =======
   m_RootOrder: 9
@@ -160,6 +161,9 @@ Transform:
 =======
   m_RootOrder: 8
 >>>>>>> parent of b04a589... j
+=======
+  m_RootOrder: 8
+>>>>>>> parent of 403b647... Added flying hous
   m_LocalEulerAnglesHint: {x: -4.78, y: 16.692001, z: 64.597}
 --- !u!1001 &306142736
 Prefab:
@@ -344,6 +348,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 6
 =======
   m_RootOrder: 7
@@ -360,6 +365,9 @@ Transform:
 =======
   m_RootOrder: 6
 >>>>>>> parent of b04a589... j
+=======
+  m_RootOrder: 6
+>>>>>>> parent of 403b647... Added flying hous
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &927076665
 Prefab:
@@ -748,6 +756,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 5
 =======
   m_RootOrder: 6
@@ -764,6 +773,9 @@ Transform:
 =======
   m_RootOrder: 5
 >>>>>>> parent of b04a589... j
+=======
+  m_RootOrder: 5
+>>>>>>> parent of 403b647... Added flying hous
   m_LocalEulerAnglesHint: {x: 0, y: -95.33301, z: 0}
 --- !u!114 &1233684149
 MonoBehaviour:
@@ -863,6 +875,7 @@ Transform:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 3
 =======
   m_RootOrder: 4
@@ -879,6 +892,9 @@ Transform:
 =======
   m_RootOrder: 3
 >>>>>>> parent of b04a589... j
+=======
+  m_RootOrder: 3
+>>>>>>> parent of 403b647... Added flying hous
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1258610458
 GameObject:

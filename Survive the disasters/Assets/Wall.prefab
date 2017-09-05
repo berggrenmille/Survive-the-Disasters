@@ -2685,6 +2685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5701f01ed7188284196ca621b096ffa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 <<<<<<< HEAD:Survive the disasters/Assets/Wall.prefab
 <<<<<<< HEAD:Survive the disasters/Assets/Wall.prefab
 <<<<<<< HEAD:Survive the disasters/Assets/Wall.prefab
@@ -2715,6 +2716,10 @@ MonoBehaviour:
   breakForce: 50
   breakTourque: 50
 >>>>>>> parent of b04a589... j:Survive the disasters/Assets/Wall.prefab
+=======
+  breakForce: 50
+  breakTourque: 50
+>>>>>>> parent of 403b647... Added flying hous
 --- !u!114 &114258231212012254
 MonoBehaviour:
   m_ObjectHideFlags: 1
