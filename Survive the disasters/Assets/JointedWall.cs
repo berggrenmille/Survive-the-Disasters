@@ -7,11 +7,6 @@ public class JointedWall : MonoBehaviour {
 
     public float breakForce = 50f;
     public float breakTourque = 50f;
-
-    public bool useRandomBreakOffset;
-    public float breakForceOffset = 20f;
-    public float breakTourqueOffset = 20f;
-
 	// use this for initialization
 	void Start () {
         for (int i = 0; i < transform.childCount; i++)
@@ -23,49 +18,53 @@ public class JointedWall : MonoBehaviour {
             {
                 if (hit.collider.CompareTag("Physics Object"))
                 {
-                    AddJoint(t.gameObject, hit.rigidbody);
+                    FixedJoint joint = t.gameObject.AddComponent<FixedJoint>();
+                    joint.connectedBody = hit.rigidbody;
+                    joint.breakForce = breakForce;
+                    joint.breakTorque = breakTourque;
+                    joint.enableCollision = true;
                 }
             }
             if (Physics.Raycast(t.position, -t.up, out hit, t.GetComponent<Collider>().bounds.extents.y + 0.1f))
             {
                 if (hit.collider.CompareTag("Physics Object"))
                 {
-                    AddJoint(t.gameObject, hit.rigidbody);
+                    FixedJoint joint = t.gameObject.AddComponent<FixedJoint>();
+                    joint.connectedBody = hit.rigidbody;
+                    joint.breakForce = breakForce;
+                    joint.breakTorque = breakTourque;
+                    joint.enableCollision = true;
                 }
             }
             if (Physics.Raycast(t.position, t.right, out hit, t.GetComponent<Collider>().bounds.extents.x + 0.1f))
             {
                 if (hit.collider.CompareTag("Physics Object"))
                 {
-                    AddJoint(t.gameObject, hit.rigidbody);
+                    FixedJoint joint = t.gameObject.AddComponent<FixedJoint>();
+                    joint.connectedBody = hit.rigidbody;
+                    joint.breakForce = breakForce;
+                    joint.breakTorque = breakTourque;
+                    joint.enableCollision = true;
                 }
             }
             if (Physics.Raycast(t.position, -t.right, out hit, t.GetComponent<Collider>().bounds.extents.x + 0.1f))
             {
                 if (hit.collider.CompareTag("Physics Object"))
                 {
-                    AddJoint(t.gameObject, hit.rigidbody);
+                    FixedJoint joint = t.gameObject.AddComponent<FixedJoint>();
+                    joint.connectedBody = hit.rigidbody;
+                    joint.breakForce = breakForce;
+                    joint.breakTorque = breakTourque;
+                    joint.enableCollision = true;
                 }
             }
         }
 
 
 	}
-
-    private void AddJoint(GameObject origin, Rigidbody target)
-    {
-        FixedJoint joint = origin.AddComponent<FixedJoint>();
-        joint.connectedBody = target;
-        joint.enableCollision = true;
-        if (useRandomBreakOffset)
-        {
-            joint.breakForce = breakForce + Random.Range(-breakForceOffset,breakForceOffset);
-            joint.breakTorque = breakTourque + Random.Range(-breakTourqueOffset,breakTourqueOffset);
-        }
-        else
-        {
-            joint.breakForce = breakForce;
-            joint.breakTorque = breakTourque;
-        }
-    }
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
 }
