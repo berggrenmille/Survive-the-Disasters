@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Physics Object
+  - Jointed
   layers:
   - Default
   - TransparentFX
