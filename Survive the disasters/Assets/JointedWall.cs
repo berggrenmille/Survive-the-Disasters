@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class JointedWall : MonoBehaviour {
-    public float breakForce = 50f;
-    public float breakTourque = 50f;
-    public bool useBreakForceOffset = true;
-    public bool useBreakTourqueOffset = true;
-    public float breakForceOffset = 20f;
-    public float breakTourqueOffset = 20f;
+    public float minBreakForce = 50f;
+    public float maxBreakForce = 50f;
+    public float minBreakTourque = 50f;
+    public float maxBreakTourque = 50f;
         // use this for initialization
         private void Start () {
         for (int i = 0; i < transform.childCount; i++)
@@ -23,12 +21,8 @@ public class JointedWall : MonoBehaviour {
                 {
                     FixedJoint joint = t.gameObject.AddComponent<FixedJoint>();
                     joint.connectedBody = hit.rigidbody;
-                    joint.breakForce = breakForce;
-                    joint.breakTorque = breakTourque;
-                    if (useBreakForceOffset)
-                        joint.breakForce += Random.Range(-breakForceOffset, breakForceOffset);
-                    if (useBreakTourqueOffset)
-                        joint.breakTorque += Random.Range(-breakTourqueOffset, breakTourqueOffset);
+                    joint.breakForce = Random.Range(minBreakForce, maxBreakForce);
+                    joint.breakTorque = Random.Range(minBreakTourque, maxBreakTourque);
                     joint.enableCollision = true;
                 }
             }
@@ -38,8 +32,8 @@ public class JointedWall : MonoBehaviour {
                 {
                     FixedJoint joint = t.gameObject.AddComponent<FixedJoint>();
                     joint.connectedBody = hit.rigidbody;
-                    joint.breakForce = breakForce;
-                    joint.breakTorque = breakTourque;
+                    joint.breakForce = Random.Range(minBreakForce, maxBreakForce);
+                    joint.breakTorque = Random.Range(minBreakTourque, maxBreakTourque);
                     joint.enableCollision = true;
                 }
             }
@@ -49,12 +43,8 @@ public class JointedWall : MonoBehaviour {
                 {
                     FixedJoint joint = t.gameObject.AddComponent<FixedJoint>();
                     joint.connectedBody = hit.rigidbody;
-                    joint.breakForce = breakForce;
-                    joint.breakTorque = breakTourque;
-                    if (useBreakForceOffset)
-                        joint.breakForce += Random.Range(-breakForceOffset, breakForceOffset);
-                    if (useBreakTourqueOffset)
-                        joint.breakTorque += Random.Range(-breakTourqueOffset, breakTourqueOffset);
+                    joint.breakForce = Random.Range(minBreakForce, maxBreakForce);
+                    joint.breakTorque = Random.Range(minBreakTourque, maxBreakTourque);
                     joint.enableCollision = true;
                 }
             }
@@ -64,12 +54,8 @@ public class JointedWall : MonoBehaviour {
                 {
                     FixedJoint joint = t.gameObject.AddComponent<FixedJoint>();
                     joint.connectedBody = hit.rigidbody;
-                    joint.breakForce = breakForce;
-                    joint.breakTorque = breakTourque;
-                    if (useBreakForceOffset)
-                        joint.breakForce += Random.Range(-breakForceOffset, breakForceOffset);
-                    if (useBreakTourqueOffset)
-                        joint.breakTorque += Random.Range(-breakTourqueOffset, breakTourqueOffset);
+                    joint.breakForce = Random.Range(minBreakForce, maxBreakForce);
+                    joint.breakTorque = Random.Range(minBreakTourque, maxBreakTourque);
                     joint.enableCollision = true;
                 }
             }
@@ -79,12 +65,8 @@ public class JointedWall : MonoBehaviour {
                 {
                     FixedJoint joint = t.gameObject.AddComponent<FixedJoint>();
                     joint.connectedBody = hit.rigidbody;
-                    joint.breakForce = breakForce;
-                    joint.breakTorque = breakTourque;
-                    if (useBreakForceOffset)
-                        joint.breakForce += Random.Range(-breakForceOffset, breakForceOffset);
-                    if (useBreakTourqueOffset)
-                        joint.breakTorque += Random.Range(-breakTourqueOffset, breakTourqueOffset);
+                    joint.breakForce = Random.Range(minBreakForce, maxBreakForce);
+                    joint.breakTorque = Random.Range(minBreakTourque, maxBreakTourque);
                     joint.enableCollision = true;
                 }
             }
@@ -95,12 +77,8 @@ public class JointedWall : MonoBehaviour {
                 {
                     FixedJoint joint = t.gameObject.AddComponent<FixedJoint>();
                     joint.connectedBody = hit.rigidbody;
-                    joint.breakForce = breakForce;
-                    joint.breakTorque = breakTourque;
-                    if (useBreakForceOffset)
-                        joint.breakForce += Random.Range(-breakForceOffset, breakForceOffset);
-                    if (useBreakTourqueOffset)
-                        joint.breakTorque += Random.Range(-breakTourqueOffset, breakTourqueOffset);
+                    joint.breakForce = Random.Range(minBreakForce, maxBreakForce);
+                    joint.breakTorque = Random.Range(minBreakTourque, maxBreakTourque);
                     joint.enableCollision = true;
                 }
             }

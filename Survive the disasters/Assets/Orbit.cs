@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Orbit : MonoBehaviour {
-    Vector3 origin;
+    public Vector3 origin;
     public float radius = 1f;
     public float speed = 1f;
     public bool isOrbiting;
